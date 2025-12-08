@@ -69,7 +69,7 @@ If one of
 or similarly, if one of 
 
 - $p$
-- $ \frac{m+1}{n}$ 
+- $\frac{m+1}{n}$ 
 - $\frac{m+1}{n}+p$ 
 
 is an integer, then both integrals in the above equation can be expressed in **finite form**.

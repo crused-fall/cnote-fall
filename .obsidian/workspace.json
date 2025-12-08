@@ -11,14 +11,24 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-git/data.json",
-                "bFile": ".obsidian/plugins/obsidian-git/data.json",
-                "aRef": ""
+                "file": "00-Inbox收件箱/00-TBC待完成/Mobius Transformation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json"
+              "icon": "lucide-file",
+              "title": "Mobius Transformation"
             }
           }
         ]
@@ -89,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 289.5
   },
   "right": {
     "id": "ae1ef46d9c3344a1",
@@ -153,12 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "01-Stuff_learing/Math数学/Mathematical Analysis/Mathematical Analysis.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Mathematical Analysis"
             }
           },
           {
@@ -234,11 +245,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 555.5
+    "width": 563.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,42 +278,42 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "00-Inbox收件箱/00-TBC待完成/Mobius Transformation.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Mathematical Analysis.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/The real & complex number systems.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Real & complex number systems.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Proof methodology.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Basic common inequalities.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/1.2Proof_Methodology.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义/2.2Sequences.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_3.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_4.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_5.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_6.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_2.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_1.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/M(3)的计算.md",
+    "01-Stuff_learing/Math数学/Elliptic Function/Elliptic_Function_1.md",
+    "01-Stuff_learing/Math数学/Basic Real Analysis/Measure Theory.md",
+    "01-Stuff_learing/Math数学/Basic Real Analysis/Basic Real Analysis.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/1.1Basic_Common_Inequalities.md",
+    "01-Stuff_learing/Math数学/UNUK notes/Probability and Statistics/UNUK_Probability_1.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义/1.2.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义/Untitled.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义/1.1基础常用不等式.md",
     "00-Daily_note/00-Daily_note.md",
-    "02-Tech_learning/Obsidian Plugin/attachment-management.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Untitled Folder",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Method of Radical Integral.md",
+    "01-Stuff_learing/Literature&Philosophy文哲/Literature文学/one-hundred-years-of-solitude-gabriel-garcia-marquez.pdf",
     "00-Daily_note/00-Daily_note.base",
-    "02-Tech_learning/Obsidian Plugin/Obsidian Plugin.md",
-    "04-Pikachu_vault/图片_math/26647479-539c-448d-832e-142306c27c5a.webp.md",
     "04-Pikachu_vault/图片_math",
     "04-Pikachu_vault",
-    "01-Stuff_learing/Math数学/Probability/Test method/Tests in Regression Analysis/Tests in Regression Analysis.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Time Series Tests/Time Series Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Two-Sample and Multiple Group Comparison Tests/Two-Sample and Multiple Group Comparison Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Other Specialized Tests/Other Specialized Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Survival Analysis Tests/Survival Analysis Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/One-Variable and Distribution Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Proportions and Categorical Data Tests/Proportions and Categorical Data Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/One-Sample t-test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/Shapiro-Wilk Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/One-Sample Z-test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/One-Sample Wilcoxon Signed-Rank Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/Jarque-Bera Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/One-Sample Sign Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/Kolmogorov-Smirnov Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/Anderson-Darling Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests/Chi-Square Goodness-of-Fit Test.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Homogeneity of Variances Tests/Homogeneity of Variances Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Non-Parametric and Randomness Tests/Non-Parametric and Randomness Tests.md",
-    "01-Stuff_learing/Math数学/Probability/Test method/Correlation and Association Tests/Correlation and Association Tests.md",
-    "01-Stuff_learing/Math数学/UNUK notes/Vector calculus/UNUK_Vector Calculus_1.md",
-    "01-Stuff_learing/Math数学/UNUK notes/Electromagnetic/UNUK_Electromagnetism_2.md",
-    "01-Stuff_learing/Math数学/UNUK notes/Electromagnetic/UNUK_Electromagnetism_1.md",
     "01-Stuff_learing/Math数学/Probability/Test method/Two-Sample and Multiple Group Comparison Tests",
     "01-Stuff_learing/Math数学/Probability/Test method/Time Series Tests",
     "01-Stuff_learing/Math数学/Probability/Test method/Tests in Regression Analysis",
     "01-Stuff_learing/Math数学/Probability/Test method/Other Specialized Tests",
-    "01-Stuff_learing/Math数学/Probability/Test method/Survival Analysis Tests",
-    "01-Stuff_learing/Math数学/Probability/Test method/Proportions and Categorical Data Tests",
-    "01-Stuff_learing/Math数学/Probability/Test method/One-Variable and Distribution Tests",
     "00-PC notes/Math数学/UNUK notes/UNUK notes.canvas",
     "01-GoodNotes/45a4125358e3409c9b9a2230daa03943_00000.png",
     "Untitled.canvas",

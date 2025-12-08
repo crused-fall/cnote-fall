@@ -182,7 +182,8 @@ $$
 
 
 (p-p^\prime)z^2 + 2(q-q^\prime)z+(p^\prime q - pq^\prime) =0
-
+
+
 $$
 Necessary and sufficient condition of having two different roots is:
 $$
@@ -203,7 +204,8 @@ For $x^2+px+q$ is **indivisible**, then $4q-p^2>0$. If:
    thus
    $$
     \begin{aligned}\ [2(q+q^\prime) - pp^\prime]^2 &\geq [4\sqrt{qq^\prime}-pp^\prime]^2 \\&= (4q-p^2)(4q^\prime - {p^\prime}^2) + 4(p\sqrt{q^\prime} - p^\prime\sqrt{q})^2\\&\geq (4q-p^2)(4q^\prime - {p^\prime}^2)\end{aligned}
-   
+   
+
    $$
    the inequality holds.
 
@@ -214,7 +216,8 @@ $$
 
 
 \int \frac{Mx + N}{(x^2 + px + q)^m\sqrt{ax^2 + bx + c}}dx \to \int \frac{P(t)}{(t^2 + \lambda)^m\sqrt{\alpha t^2 + \beta}}dt
-
+
+
 $$
 where $\frac{P(t)}{(t^2+\lambda)^m}$ can be decompose into partial fractions.
 
@@ -235,7 +238,8 @@ $$
 \int \frac{At + B}{(t^2 + \lambda)^k\sqrt{\alpha t^2 + \beta}}dt=
 
 \frac{A}{\alpha}\int \frac{\alpha tdt}{(t^2 + \lambda)^k\sqrt{\alpha t^2 + \beta}} + B\int \frac{dt}{(t^2 + \lambda)^k\sqrt{\alpha t^2 + \beta}}
-
+
+
 $$
 where:
 

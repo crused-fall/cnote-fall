@@ -6,7 +6,6 @@
 **简介**：本页面是"Literature&Philosophy文哲"相关内容的导航地图。
 %% Begin Waypoint %%
 - **Literature文学**
-
 - **Philosophy哲学**
 	- **四个剃刀**
 		- [[剃刀]]

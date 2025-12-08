@@ -5,6 +5,6 @@ tags:
 ---
 
 %% Begin Waypoint %%
-- [[1]]
+- [[Elliptic_Function_1]]
 
 %% End Waypoint %%
