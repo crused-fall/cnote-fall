@@ -1,5 +1,5 @@
 ---
-title: Notes on UNUK Real Analysis
+title: Notes on UNUK Differential Equations
 tags:
   - math
   - Differential_Equation
@@ -80,7 +80,7 @@ date: 2025-11-16
 
 > **Definition 1.2.3 — Analytic function** .
 >
-> A function $f(x)$ is** analytic** at $x = x_0$ if can be expressed as a **Taylor series** at $x = x_0$: 
+> A function $f(x)$ is **analytic** at $x = x_0$ if can be expressed as a **Taylor series** at $x = x_0$: 
 > $$
 > f(x)=\sum_{n=0}^{\infty}a_{n}(x-x_{0})^{n},\quad{\mathrm{where}}\quad a_{n}={\frac{1}{n!}}\cdot\operatorname*{lim}_{x\to x_{0}}{\frac{\mathrm{d}^{n}f}{\mathrm{d}x^{n}}}
 > $$
@@ -537,7 +537,7 @@ $$
 $$
 then:
 $$
-\frac{du}{dx}=\frac{1}{[y_1(x)]^2}\exp\left(-\int p(x)dx\right)
+\frac{du}{dx}=\frac{1}{[y_1(x)]^2}\exp\left(-\int p(x)dx\right)=\frac{W(y_1,y_2)}{[y_1(x)]^2}
 $$
 where:
 $$
@@ -583,6 +583,10 @@ the general solution is given as:
 $$
 Y(x)=-y_1(x)\left[\int \frac{y_2(x)g(x)}{W(y_1,y_2)}\right]+y_2(x)\left[\int \frac{y_1(x)g(x)}{W(y_1,y_2)}\right]
 $$
+
+
+
+
 
 # Chapter Ⅱ
 
@@ -946,21 +950,11 @@ For a curve:
 $$
 l:\Phi(x,y)=0
 $$
-The second **Total derivative** is:
+that satisfies 
 $$
-\frac{d^2U}{dx^2}=u_{xx}+2\lambda u_{xy}+\lambda^2u_{yy}+\frac{d\lambda}{dx}u_y
+M[\Phi]=0
 $$
-where $\lambda=\frac{dy}{dx}$
-
-
-
-For the case that:
-$$
-M[u]=k(u_{xx}+2\lambda u_{xy}+\lambda^2u_{yy})
-$$
-which reduce the order of the origin PDE.
-
-The equation is satisfied:
+Then the equation is satisfied:
 $$
 A\lambda^2-2B\lambda+C=0
 $$
@@ -1129,6 +1123,7 @@ u(x,t)=\sum_{n=1}^\infty b_n\sin\left(\frac{n\pi x}L\right)\exp\left(-\frac{n^2\
 $$
 
 
+
 ## Wave Equation
 
 Consider the case where the PDE is coupled with **Neumann boundary conditions (NBCs)**:
@@ -1169,6 +1164,7 @@ u(x,t)=\frac{a_0+b_0t}2+\sum_{n=1}^\infty\left[a_n\cos\left(\frac{n\pi t}L\right
 \mathrm{where}\quad a_n=\frac2L\int_0^Lf(x)\cos\left(\frac{n\pi x}L\right)\mathrm{d}x,\quad n\in\mathbb{N}_0;\\
 b_0=\frac2L\int_0^Lg(x)\mathrm{d}x,\quad b_n=\frac2{n\pi}\int_0^Lg(x)\cos\left(\frac{n\pi x}L\right)\mathrm{d}x,\quad n\in\mathbb{N}.
 $$
+
 
 
 ## Laplace Equation
@@ -1678,7 +1674,7 @@ For inhomogeneous PDE:
 
 # Chapter Ⅵ
 
-## Transforming ODEs into Sturm-Liouville (self-adjoint) form  
+## Transforming ODEs into Sturm-Liouville (self-adjoint) form
 
 
 
