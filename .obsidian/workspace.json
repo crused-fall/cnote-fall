@@ -11,24 +11,13 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "00-Inbox收件箱/00-TBC待完成/Mobius Transformation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "N_Database.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "Mobius Transformation"
+              "icon": "lucide-table",
+              "title": "N_Database"
             }
           }
         ]
@@ -99,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
-    "collapsed": true
+    "width": 289.5
   },
   "right": {
     "id": "ae1ef46d9c3344a1",
@@ -164,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-Stuff_learing/Math数学/UNUK notes/Vector calculus/UNUK_Vector Calculus_1.md",
+                "file": "N_Database.base",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of UNUK_Vector Calculus_1"
+              "title": "N_Database 的大纲"
             }
           },
           {
@@ -260,12 +248,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 470.5,
-    "collapsed": true
+    "width": 668.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -294,10 +281,10 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "5c93cba53e23a6b4",
   "lastOpenFiles": [
+    "00-Inbox收件箱/000-TBC待完成/Mobius Transformation.md",
     "01-Stuff_learing/Math数学/UNUK notes/Vector calculus/UNUK_Vector Calculus_1.md",
-    "00-Inbox收件箱/00-TBC待完成/Mobius Transformation.md",
     "03-GoodNotes/UNUK revision/Vector calculus review.pdf",
     "03-GoodNotes/UNUK revision/Vector calculus review.pdf~RF8886c47.TMP",
     "03-GoodNotes/UNUK revision/DE review.pdf",

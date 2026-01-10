@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
+      "basename": "N_Database",
+      "path": "N_Database.base"
+    },
+    {
       "basename": "Mobius Transformation",
-      "path": "00-Inbox收件箱/00-TBC待完成/Mobius Transformation.md"
+      "path": "00-Inbox收件箱/000-TBC待完成/Mobius Transformation.md"
     },
     {
       "basename": "UNUK_Vector Calculus_1",
@@ -91,10 +95,6 @@
     {
       "basename": "darlal-switcher-plus",
       "path": "02-Tech_learning/Obsidian Plugin/Plugin Intro/darlal-switcher-plus.md"
-    },
-    {
-      "basename": "N_Database",
-      "path": "N_Database.base"
     }
   ],
   "omittedPaths": [],
