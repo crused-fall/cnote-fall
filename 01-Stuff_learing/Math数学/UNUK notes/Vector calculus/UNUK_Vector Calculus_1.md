@@ -19,7 +19,7 @@ date: 2025-11-17
 > Given two vectors $\boldsymbol{a,b}\in\R^3$, their cross product is a vector, denoted $\boldsymbol {a × b}$ that is orthogonal to both $\boldsymbol a$ and $\boldsymbol b$ and thus orthogonal to the plane spanned by $\boldsymbol{a,b}$, and is of magnitude
 >
 > $$
-> |\boldsymbol{a×b}|=|\boldsymbol a||\boldsymbol b|\sin(\theta_{\boldsymbol{ab}})
+> |\boldsymbol{a×b}|=|\boldsymbol a||\boldsymbol  b|\sin(\theta_{\boldsymbol{ab}})
 > $$
 > with $\theta_{\boldsymbol{ab}}\in[0,\pi]$. This vector is oriented in a right-handed sense, as seen below, and can be written
 > $$
@@ -533,11 +533,9 @@ Omit
 ## Line integral
 
 ### Line integral as an ordinary definite integral
-
 $$
 \int_C\mathbf{A}(\mathbf{r})\cdot\mathbf{d}\mathbf{r}:=\int_{t_{min}}^{t_{max}}\mathbf{A}(\mathbf{r}(t))\cdot\frac{\mathrm{d}\mathbf{r}(t)}{\mathrm{d}t}\:\mathrm{d}t.
 $$
-
 **Example**
 
 Consider a curve that is given in a parametrised form
@@ -550,14 +548,10 @@ Then
 $$
 \int_C\mathbf{A}(\mathbf{r})\cdot\mathbf{d}\mathbf{r}=\int_0^1(t,t,2t^2)\cdot(1,1,4t)\mathrm{d}t=\int_0^1(2t+8t^3)\mathrm{d}t=3.
 $$
-
-
 ### Line integral of a scalar
-
 $$
 \int_{C}\phi\:\mathrm{dr}
 $$
-
 **Example**
 
 Consider a curve that is given in a parametrised form
@@ -570,14 +564,10 @@ Then
 $$
 \int_{C}\phi\:\mathbf{d}\mathbf{r}=\int_{0}^{1}(t+t^{4})(1,2t,0)\mathrm{d}t=\left(\int_{0}^{1}(t+t^{4})\mathrm{d}t,\int_{0}^{1}(2t^{2}+2t^{5})\mathrm{d}t,0\right)=\left(\frac{1}{2}+\frac{1}{5},\frac{2}{3}+\frac{2}{6},0\right)=\left(\frac{7}{10},1,0\right)
 $$
-
-
 ### Line integral of a vector field
-
 $$
 \int_C\mathbf{A}\times\mathrm{dr}
 $$
-
 **Example**
 
 Consider a curve that is given in a parametrised form
@@ -592,22 +582,15 @@ $$
 $$
 
 
-
-
 ### Length of a curve
-
 $$
 L=\int_a^b\sqrt{1+(\mathrm{d}y/\mathrm{d}x)^2}\:\mathrm{d}x,
 $$
 
-
-
 ## Change of variables for double integrals
-
 $$
 \iint_Df(x,y)\:\mathrm{d}x\:\mathrm{d}y=\iint_{D_0}f\big((x(u,v),y(u,v)\big)\:\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\mathrm{d}u\:\mathrm{d}v
 $$
-
 ![image-20251127071050434](C:\Users\19006\AppData\Roaming\Typora\typora-user-images\image-20251127071050434.png)
 
 where
@@ -620,16 +603,12 @@ $$
 \left(\int_{-\infty}^{\infty}e^{-x^{2}}\:\mathrm{d}x\right)\left(\int_{-\infty}^{\infty}e^{-y^{2}}\:\mathrm{d}y\right)=\iint_{\mathbb{R}^{2}}e^{-(x^{2}+y^{2})}\:\mathrm{d}x\:\mathrm{d}y\\
 \stackrel{(\mathrm{i})}{=}&\iint_{0<\rho<\rho}e^{-\rho^{2}}\:\rho\:\mathrm{d}\rho\:\mathrm{d}\phi=\int_{0}^{2\pi}\mathrm{d}\phi\int_{0}^{\infty}e^{-\rho^{2}}\:\rho\:\mathrm{d}\rho=(2\pi)\left(\frac{1}{2}\right)=\pi\end{array}
 $$
-
-
 ## Surface integral
 
 ### Surface integral of a vector field over a parametrised surface
-
 $$
 \iint_S\mathbf{A}\cdot\mathbf{n}\:\mathrm{d}s:=\pm\int\int\mathbf{A}(\mathbf{r}(u,v))\cdot\left(\frac{\partial\mathbf{r}(u,v)}{\partial u}\times\frac{\partial\mathbf{r}(u,v)}{\partial v}\right)\mathrm{d}u\mathrm{d}v.
 $$
-
 **Example**
 
 Consider the curved surface
@@ -642,14 +621,10 @@ The surface integral pointing outwards
 $$
 \begin{aligned}\iint_{S}\mathbf{A}\cdot\mathbf{n}\:\mathrm{d}s&=\int_{0}^{2\pi}\int_{0}^{1}(\cos(\theta),z,-\sin(\theta))\cdot(\cos(\theta),\sin(\theta),0)\:\mathrm{d}z\:\mathrm{d}\theta\\&=\int_{0}^{2\pi}\int_{0}^{1}(\cos^{2}(\theta)+z\sin(\theta))\:\mathrm{d}z\:\mathrm{d}\theta.\end{aligned}
 $$
-
-
 ### Surface integral of a scalar field  
-
 $$
 \iint_Sf\mathrm ds
 $$
-
 **Example**
 
 Consider the curved surface
@@ -658,33 +633,23 @@ z=1-x^2-y^2,z\ge0
 $$
 and vector field $\phi=1$.
 $$
-\begin{aligned}\iint_{S}\mathbf{A}\cdot\mathbf{n}\:\mathrm{d}s&=\int_{0}^{2\pi}\int_{0}^{1}(\cos(\theta),z,-\sin(\theta))\cdot(\cos(\theta),\sin(\theta),0)\:\mathrm{d}z\:\mathrm{d}\theta\\&=\int_{0}^{2\pi}\int_{0}^{1}(\cos^{2}(\theta)+z\sin(\theta))\:\mathrm{d}z\:\mathrm{d}\theta.\end{aligned}
-$$
-
-$$
 A=\iint_{s}ds=\iint\sqrt{1+4x^{2}+4y^{2}}\:\mathrm{d}x\mathrm{d}y.
 $$
 
 
 
-
-
 ### Other forms of surface integration  
-
 $$
 \iint_Sf\mathbf{n}\:\mathrm{d}s,\quad\iint_S\mathbf{v}\times\mathbf{n}\:\mathrm{d}s.
 $$
-
 the result is a vector.
 
 
 
 ## Volume integrals  
-
 $$
 \int f(\mathbf{r})\:\mathrm{d}x\:\mathrm{d}y\:\mathrm{d}z=\int f\big(\mathbf{r}(u,v,w)\big)\:\left|\frac{\partial(x,y,z)}{\partial(u,v,w)}\right|\mathrm{d}u\:\mathrm{d}v\:\mathrm{d}w
 $$
-
 where
 $$
 \frac{\partial(x,y,z)}{\partial(u,v,w)}=\left|\begin{array}{ccc}\frac{\partial x}{\partial u}&\frac{\partial x}{\partial v}&\frac{\partial x}{\partial w}\\\frac{\partial y}{\partial u}&\frac{\partial y}{\partial v}&\frac{\partial y}{\partial w}\\\frac{\partial z}{\partial u}&\frac{\partial z}{\partial v}&\frac{\partial z}{\partial w}\end{array}\right|
@@ -701,8 +666,6 @@ M&=\int_{C}\rho\:\mathrm{d}V.\\
 &=\int_{0}^{1}\int_{0}^{1}(1+{\frac{1}{2}}yz)\:\mathrm{d}y\:\mathrm{d}z=\int_{0}^{1}(1+{\frac{1}{4}}z)\:dz=1+{\frac{1}{8}}={\frac{9}{8}}.
 \end{aligned}
 $$
-
-
 # Chapter Ⅳ
 
 ## Theorems
@@ -769,7 +732,6 @@ $$
 $$
 \oint_C\mathbf{A}\cdot\mathbf{d}\mathbf{r}=\int_0^{2\pi}(\sin t,-\cos t,0)\cdot(-\sin t,\cos t,0)\:\mathrm{d}t=-2\pi.
 $$
-
 > [!note]
 >
 > The reason why Stokes' Theorem is not available is that the vector field has a singularity at $x=y=0$.
@@ -823,8 +785,6 @@ Then denoted as:
 $$
 a_i=b_i+c_i
 $$
-
-
 ## The Einstein summation convention  
 
 For vector $\mathbf{a,b}$
@@ -835,8 +795,6 @@ Then denoted as
 $$
 \mathbf{a\cdot b}=a_ib_i
 $$
-
-
 ## Index notation and matrix multiplication  
 
 For the product of matrix
@@ -853,8 +811,6 @@ Their product can be expressed as
 $$
 (AB)_{ij}=a_{ik}b_{kj}
 $$
-
-
 ## The alternating tensor  
 
 Denoted a special alternating tensor $\epsilon_{ijk}$ as
@@ -871,8 +827,6 @@ $$
 $$
 \det(A)=\left|\begin{array}{ccc}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{array}\right|=\epsilon_{ijk}a_{1i}a_{2j}a_{3k}.
 $$
-
-
 
 ## Alternating tensor and the Kronecker delta
 
@@ -892,16 +846,10 @@ $$
 =\det\big(\delta_{i_p j_q}\big)_{p,q=1}^{k}
 =\sum_{\sigma\in S_k}\operatorname{sgn}(\sigma)\prod_{p=1}^k\delta_{i_p j_{\sigma(p)}},
 $$
-
-
 ## Grad, div and curl in index notation  
-
 $$
 (\nabla f)_i=\frac{\partial f}{\partial x_i}\quad\text{or equivalently}\quad\nabla f=\mathbf{e}_i\frac{\partial f}{\partial x_i}\equiv\mathbf{e}_i\partial_if,
 $$
-
-
-
 
 $$
 \begin{aligned}
@@ -912,8 +860,6 @@ $$
 
 \end{aligned}
 $$
-
-
 
 
 ## Grad, div and curl applied to products of functions  
@@ -952,17 +898,13 @@ $$
 # Chapter Ⅵ
 
 ## Scale factors and unit vectors
-
 $$
 \mathbf{e}_1=\frac{1}{h_1}\frac{\partial\mathbf{r}}{\partial u_1}=\frac{\mathbf{h}_1}{h_1}.
 $$
-
 where
 $$
 h_1=\left|\frac{\partial\mathbf{r}}{\partial u_1}\right|
 $$
-
-
 ## Commonly used curvillinear coordinates
 
 ![image-20251127093951304](C:\Users\19006\AppData\Roaming\Typora\typora-user-images\image-20251127093951304.png)
@@ -981,7 +923,13 @@ Formed by
 $$
 y=(\frac{x}{2v})^2-v^2 \quad y=u^2-(\frac{x}{2u})^2
 $$
-![image-20251127095557178](C:\Users\19006\AppData\Roaming\Typora\typora-user-images\image-20251127095557178.png)
+![image-20251127095557178](C:\Users\19006\AppData\Roaming\Typora\typora-user-images\image-20251127095557178.png
+
+```
+
+```
+
+)
 $$
 \mathbf{h}_{1}=\frac{\partial\mathbf{r}}{\partial u}=(2v,2u),\quad\Rightarrow h_{1}=2\sqrt{u^{2}+v^{2}},\quad\mathbf{e}_{1}=\frac{1}{\sqrt{u^{2}+v^{2}}}(v,u),\\\mathbf{h}_{2}=\frac{\partial\mathbf{r}}{\partial v}=(2u,-2v),\quad\Rightarrow h_{2}=2\sqrt{u^{2}+v^{2}},\quad\mathbf{e}_{2}=\frac{1}{\sqrt{u^{2}+v^{2}}}(u,-v).
 $$
@@ -990,7 +938,6 @@ which implies its orthogonal
 
 
 ## Length, area and volume elements in curvilinear coordinates  
-
 $$
 \mathbf{dr}=\frac{\partial\mathbf{r}}{\partial u_{1}}\mathrm{d}u_{1}+\frac{\partial\mathbf{r}}{\partial u_{2}}\mathrm{d}u_{2}+\frac{\partial\mathbf{r}}{\partial u_{3}}\mathrm{d}u_{3}=h_{1}\mathbf{e}_{1}\mathrm{d}u_{1}+h_{2}\mathbf{e}_{2}\mathrm{d}u_{2}+h_{3}\mathbf{e}_{3}\mathrm{d}u_{3},
 $$
@@ -1007,8 +954,6 @@ $$
 \mathrm{d}V=\left|\frac{\partial(x,y,z)}{\partial(u_{1},u_{2},u_{3})}\right|\mathrm{d}u_{1}\mathrm{d}u_{2}\mathrm{d}u_{3}=\frac{\partial\mathbf{r}}{\partial u_{1}}\cdot\left(\frac{\partial\mathbf{r}}{\partial u_{2}}\times\frac{\partial\mathbf{r}}{\partial u_{3}}\right)\mathrm{d}u_{1}\mathrm{d}u_{2}\mathrm{d}u_{3}\\=h_{1}h_{2}h_{3}\:\mathbf{e}_{1}\cdot(\mathbf{e}_{2}\times\mathbf{e}_{3})\mathrm{d}u_{1}\mathrm{d}u_{2}\mathrm{d}u_{3},
 $$
 
-
-
 ## Vector differentiation in orthogonal curvilinear coordinates
 
 1. $$
@@ -1018,9 +963,9 @@ $$
 2. $$
    \begin{aligned}\nabla\cdot\mathbf{A}&=\frac{1}{h_{1}h_{2}h_{3}}\sum_{i}\frac{\partial}{\partial u_{i}}\left(\frac{h_{1}h_{3}A_{i}}{h_{i}}\right)\\&=\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial(h_{2}h_{3}A_{1})}{\partial u_{1}}+\frac{\partial(h_{1}h_{3}A_{2})}{\partial u_{2}}+\frac{\partial(h_{1}h_{2}A_{3})}{\partial u_{3}}\right]\end{aligned}
    $$
-
+   
 3. $$
-   \begin{aligned}\nabla\times\mathbf{A}&=\frac{1}{h_{1}h_{2}h_{3}}\left|\begin{array}{ccc}h_{1}\mathbf{e}_{2}&h_{3}\mathbf{e}_{3}\\\frac{\partial}{\partial u_{1}}&\frac{\partial}{\partial u_{2}}&\frac{\partial}{\partial u_{3}}\\h_{1}A_{1}&h_{2}A_{2}&h_{3}A_{3}\end{array}\right|\\&=\frac{\mathbf{e}_{1}}{h_{2}h_{3}}\left(\frac{\partial(h_{3}A_{3})}{\partial u_{2}}-\frac{\partial(h_{2}A_{2})}{\partial u_{3}}\right)+\frac{\mathbf{e}_{2}}{h_{1}h_{3}}\left(\frac{\partial(h_{1}A_{1}A_{1})}{\partial u_{3}}-\frac{\partial(h_{3}A_{3})}{\partial u_{1}}\right)\\&+\frac{\mathbf{e}_{3}}{h_{1}h_{2}}\left(\frac{\partial(h_{2}A_{2})}{\partial u_{1}}-\frac{\partial(h_{1}A_{1})}{\partial u_{2}}\right)\end{aligned}
+   \begin{aligned}\nabla\times\mathbf{A}&=\frac{1}{h_{1}h_{2}h_{3}}\left|\begin{array}{ccc}h_{1}\mathbf{e}_{1}&h_\mathbf{e}_{2}&h_{3}\mathbf{e}_{3}\\\frac{\partial}{\partial u_{1}}&\frac{\partial}{\partial u_{2}}&\frac{\partial}{\partial u_{3}}\\h_{1}A_{1}&h_{2}A_{2}&h_{3}A_{3}\end{array}\right|\\&=\frac{\mathbf{e}_{1}}{h_{2}h_{3}}\left(\frac{\partial(h_{3}A_{3})}{\partial u_{2}}-\frac{\partial(h_{2}A_{2})}{\partial u_{3}}\right)+\frac{\mathbf{e}_{2}}{h_{1}h_{3}}\left(\frac{\partial(h_{1}A_{1}A_{1})}{\partial u_{3}}-\frac{\partial(h_{3}A_{3})}{\partial u_{1}}\right)\\&+\frac{\mathbf{e}_{3}}{h_{1}h_{2}}\left(\frac{\partial(h_{2}A_{2})}{\partial u_{1}}-\frac{\partial(h_{1}A_{1})}{\partial u_{2}}\right)\end{aligned}
    $$
 
 4. $$

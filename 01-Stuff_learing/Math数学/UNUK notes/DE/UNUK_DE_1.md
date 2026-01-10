@@ -87,7 +87,7 @@ date: 2025-11-16
 
 
 
-> **Definition 1.5.1 — Euler equation** :
+> [!definition] **Definition 1.5.1 — Euler equation** :
 >
 > **Euler equations** are ODEs in the form of:
 > $$
@@ -336,8 +336,8 @@ date: 2025-11-16
 >
 >
 > $$
-> \begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
-> $$
+ \begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
+$$
 > where:
 >
 > - $(A_{1},B_{1})\neq(0,0)$
@@ -420,7 +420,6 @@ date: 2025-11-16
 # Chapter Ⅰ
 
 ## Solution of first order ODE
-
 $$
 \frac{dy}{dx}+p(x)y=q(x)
 $$
@@ -437,34 +436,28 @@ $$
 y(x)=\frac{C}{r(x)}+\frac{1}{r(x)}+\int q(x)r(x)dx
 $$
 
-
-
 ##  Solution of constant-coefficient homogeneous ODEs
-
 $$
 a\frac{d^2y}{dx^2}+b\frac{dy}{dx}+cy=0
 $$
-
 Suppose:
 $$
 \Delta=\sqrt{b^2-4ac}
 $$
-
 1. Case 1: $\Delta>0$
-   $$
+$$
    y_h(x)=\exp (-\frac{bx}{2a})\cdot[Ae^{\frac{\sqrt{\Delta}x}{2a}}+Be^{-\frac{\sqrt{\Delta}x}{2a}}]
-   $$
-
+$$
 2. Case 2: $\Delta = 0$
-   $$
+$$
    y_h(x)=e^{rx}[A+Bx]
-   $$
+$$
    where $r$ is the root of $ax^2+bx+c=0$.
 
 3. Case 3: $\Delta <0$
-   $$
+$$
    y_h(x)=\exp\left(-\frac{bx}{2a}\right)\cdot\left[C\cos\left(\frac{\sqrt{-\Delta}x}{2a}\right)+D\sin\left(\frac{\sqrt{-\Delta}x}{2a}\right)\right]
-   $$
+$$
    
 
 
@@ -479,7 +472,7 @@ Suppose: $u(w)=y(w(x))$, then
 
 1. $$
    \frac{\mathrm{d}u}{\mathrm{d}x}=\frac{\mathrm{d}u}{\mathrm{d}w}\frac{\mathrm{d}w}{\mathrm{d}x}=w^{\prime}(x)\dot{u}
-   $$
+$$
 
 2. $$
    \frac{\mathrm{d}^2u}{\mathrm{d}x^2}=\frac{\mathrm{d}}{\mathrm{d}x}[w'(x)\dot{u}]=w''(x)\dot{u}+w'(x)\frac{\mathrm{d}}{\mathrm{d}x}[\dot{u}]=w''(x)\dot{u}+[w'(x)]^2\ddot{u}
@@ -1692,7 +1685,7 @@ $$
 
 Then the ODE is equivalent to:
 $$
-F(x)\frac{d^2y}{dx^2}+q(x)y=-\lambda w(x)y(x)
+\frac{\mathrm d}{\mathrm{ d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x)
 $$
 
 
@@ -1796,14 +1789,14 @@ $$
 >
 >
 > $$
-> \begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
-> $$
+ \begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
+$$
 > where:
 >
 > - $(A_{1},B_{1})\neq(0,0)$
 > - $(A_{2},B_{2})\neq(0,0),\quad p(x),w(x)>0$
 > - $\forall x\in[a,b],\mathrm{and~}p(x),p^{\prime}(x),w(x)\text{ are all continuous on }[a,b]$
-> - $p(a)\cdotp(b)=0$ or either $a,b=\pm\infty$
+> - **$p(a)\cdot p(b)=0$ or either $a,b=\pm\infty$**
 
 
 
@@ -1850,48 +1843,40 @@ where $p(0)=0$ and $w(0)$ undefined, thus the SL is **singular**.
 1. **Beingness**:
 
    As long as the origin function $f(t)$ is bounded by some exponentially-growing function, the Laplace transform of $f(t)$ exists:
-
 $$
 |f(t)|\leq Me^{\gamma t}\quad\forall t\geq0,\:\exists M,\gamma>0\quad\implies F(s)\:\mathrm{exists}.
 $$
-
 2. **Linearity**:
-   $$
+$$
    \mathscr{L}\left\{\alpha f(t)+\beta g(t)\right\}=\alpha\mathscr{L}\left\{f(t)\right\}+\beta\mathscr{L}\left\{g(t)\right\}\qquad\forall\alpha,\beta\in \mathbb{R}
-   $$
-
+$$
 3. **Time derivatives**:
-   $$
+$$
    \mathcal{L}\{f^{(n)}(t)\}
    = s^n F(s) - \sum_{k=0}^{n-1} s^{n-1-k} f^{(k)}(0)
-   $$
-
+$$
 4. **Transform derivatives**:
-   $$
+$$
    (-1)^n\frac{\mathrm{d}^nF}{\mathrm{d}s^n}=\mathscr{L}\left\{t^nf(t)\right\}
-   $$
-
+$$
 5. **Periodic functions**:
 
    For periodic functions $f(t+T)=f(t)$
-   $$
+$$
    \mathcal{L}\{f(t)\}=\sum_{n=0}^{\infty}\int_0^Tf(u)e^{-su}du
-   $$
-
+$$
 6. **Convolution**:
-   $$
+$$
    \mathcal{L}\{f*g\}=F(s)G(s)
-   $$
-
+$$
 7. **Frequency Shifting**:
-   $$
+$$
    \mathcal{L}\{e^{at}f(t)\}=F(s-a)
-   $$
-
+$$
 8. **Time Shifting**:
-   $$
+$$
    \mathcal{L}\{H(t-t_0)f(t-t_0)\}=e^{-at_0}F(s)
-   $$
+$$
    
 
 
@@ -1963,46 +1948,40 @@ $$
 1. **Relation to Fourier series**
 
    the Fourier series in **Exponential form** is:
-   $$
+$$
    f(x)\sim \frac{1}{2\pi}\Delta_k\sum_{-\infty}^\infty e^{i\frac{n\pi}{L}}\left[\int_{-L}^Lf(z)e^{-i\frac{n\pi}{L}z}dz\right]
-   $$
+$$
    when $L\rightarrow\infty$:
-   $$
+$$
    f(x)\sim{\frac{1}{2\pi}}\int_{-\infty}^{\infty}e^{i k x}\left[\int_{-\infty}^{\infty}f(z)e^{-i k z}\mathrm{d}z\right]\mathrm{d}k
-   $$
-
+$$
 2. **Beingness**
-   $$
+$$
    |f(x)|\leq M\quad\forall x\in\mathbb{R}\text{ and }\lim_{|x|\to\infty}f(x)=0\implies\hat{f}(k)\:\mathrm{exists}
-   $$
+$$
    
 3. **Linearity**
-   $$
+$$
    \mathscr{F}\left\{\alpha f(x)+\beta g(x)\right\}=\alpha\mathscr{F}\left\{f(x)\right\}+\beta\mathscr{F}\left\{g(x)\right\}
-   $$
-
+$$
 4. **Derivatives**
-   $$
+$$
    \mathscr{F}\left\{f^{(n)}(x)\right\}=(ik)^n\hat{f}(k)
-   $$
-
+$$
 5. **Frequency derivatives**
-   $$
+$$
    \mathscr{F}\left\{x^nf(x)\right\}=i^n\frac{\mathrm{d}^n\hat{f}}{\mathrm{d}k^n}
-   $$
-
+$$
 6. **Odd/Even properties**
 
    If:
 
    - $f(x)$ is even:
-
-   $$
+$$
    \mathcal{F}\{f(x)\}=2\int_0^\infty f(x)\cos(kx)dx
-   $$
-
+$$
    - $f(x)$ is odd:
-     $$
+$$
      \mathcal{F}\{f(x)\}=-2i\int_0^\infty f(x)\sin(kx)dx
      $$
 

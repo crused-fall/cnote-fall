@@ -989,8 +989,7 @@ $$
 > For $n\in \mathbb{N}$, let $E_n\subseteq \mathbb{R}^d$ be **non-empty compact** set and $E_1\supseteq E_2\supseteq E_3\supseteq \dots$, then
 > $$
 > \bigcap_{n=1}^\infty E_n \neq \emptyset.
-> 
-
+>
 > $$
 > For $n\in \mathbb{N}$, let $E_n\subseteq \mathbb{R}^d$ be **non-empty close** set and $E_1\supseteq E_2\supseteq E_3\supseteq \dots$ and $\mathrm{diam}\, E_n\to 0$ 
 >

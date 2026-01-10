@@ -515,8 +515,6 @@ The commonly stipulated **regularity conditons** are:
    $$
    \mathbb E\!\left[-\frac{\partial^2 \ell(\theta_0)}{\partial\theta^2}\right] = I(\theta_0).
    $$
-   
-7. 
 
 
 

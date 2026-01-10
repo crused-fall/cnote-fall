@@ -6,5 +6,6 @@
   "cssTheme": "Minimal",
   "theme": "obsidian",
   "monospaceFontFamily": "JetBrains Mono",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "nativeMenus": false
 }
