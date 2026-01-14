@@ -11,13 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "N_Database.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "N_Database"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -281,8 +278,9 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "5c93cba53e23a6b4",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "N_Database.base",
     "00-Inbox收件箱/000-TBC待完成/Mobius Transformation.md",
     "01-Stuff_learing/Math数学/UNUK notes/Vector calculus/UNUK_Vector Calculus_1.md",
     "03-GoodNotes/UNUK revision/Vector calculus review.pdf",
@@ -314,7 +312,6 @@
     "01-Stuff_learing/Math数学/Basic Real Analysis/Measure Theory.md",
     "01-Stuff_learing/Math数学/Basic Real Analysis/Basic Real Analysis.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/1.1Basic_Common_Inequalities.md",
-    "01-Stuff_learing/Math数学/UNUK notes/Probability and Statistics/UNUK_Probability_1.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义",
     "01-Stuff_learing/Math数学/Mathematical Analysis/Untitled Folder",
     "01-Stuff_learing/Literature&Philosophy文哲/Literature文学/one-hundred-years-of-solitude-gabriel-garcia-marquez.pdf",

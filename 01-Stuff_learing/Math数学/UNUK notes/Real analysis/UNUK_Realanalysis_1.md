@@ -20,7 +20,7 @@ date: 2025-11-16
 > \forall \varepsilon>0, \exist N\in\mathbb{N} \quad s.t. \forall n\in\mathbb{N},n\ge N ,|a_n-L|<\varepsilon\iff \lim_{n\rightarrow\infty}a_n=L
 > $$
 
-
+ 
 
 > **Definition 1.2 - Infinity**
 > $$
@@ -67,14 +67,14 @@ date: 2025-11-16
 >      1. $\forall x\in A,x\le s$
 >      2. $\forall \varepsilon>0,\exist y\in A,s.t.y>s-\varepsilon$
 >
->    - If $A$ is not bounded above:
+>    - If $A$ is bounded below:
 >
 >      exist $l=\inf A,s.t.$:
 >
 >      1. $\forall x\in A,x\ge l$
 >      2. $\forall \varepsilon>0,\exist y\in A,s.t.y<l+\varepsilon$
 >
->    - If $A$ is bounded below:
+>    - If $A$ is not bounded above:
 >
 >      $\sup A=+\infty$
 >
@@ -335,18 +335,24 @@ date: 2025-11-16
 > K \subset \bigcup_{j=1}^n U_{\alpha_j}.
 > $$
 >
-> 3. **Finite intersection property (FIP)**
+> 3. **Characterization of Compactness (via the Finite Intersection Property-aka FIP)**
 >
-> For any family of closed sets $\{F_\alpha\}$ with (called of Finite intersection property )
+> Let $X$ be a topological space.
+>
+> > **$X$ is compact**
+> >  $\Longleftrightarrow$
+> >  **Every family of closed sets in $X$ that has the finite intersection property has nonempty total intersection.**
+>
+> Equivalently, if $\{F_\alpha\}_{\alpha\in A}$ is a family of closed subsets of $X$ such that
 > $$
-> \bigcap_{j \in J} F_j \neq \varnothing
-> \quad \text{for all finite } J \subset I,
+> \bigcap_{i=1}^n F_{\alpha_i} \neq \varnothing
+> \quad \text{for every finite subfamily},
 > $$
-> and every $F_\alpha$ intersect with  $K$ ($F_\alpha \cap K \neq \varnothing$)
-> then:
+> then
 > $$
-> \bigcap_{\alpha \in I} (F_\alpha \cap K) \neq \varnothing.
+> \bigcap_{\alpha\in A} F_\alpha \neq \varnothing.
 > $$
+> *This provides a set-theoretic characterization of compactness, dual to the open-cover definition.*
 >
 > 4. **Totally bounded and complete**
 >
@@ -546,8 +552,8 @@ date: 2025-11-16
 
 > **Theorem 1.4 - Unboundedness and subsequence **
 > $$
-> (a_n)_n \text{ is unbounded frome above} \iff \exist (a_{n_k})_k,s.t.a_{n_k}\rightarrow \infty\\
-> (a_n)_n \text{ is unbounded frome below} \iff \exist (a_{n_k})_k,s.t.a_{n_k}\rightarrow -\infty
+> (a_n)_n \text{ is unbounded from above} \iff \exist (a_{n_k})_k,s.t.a_{n_k}\rightarrow \infty\\
+> (a_n)_n \text{ is unbounded from below} \iff \exist (a_{n_k})_k,s.t.a_{n_k}\rightarrow -\infty
 > $$
 
 
@@ -725,9 +731,7 @@ date: 2025-11-16
 
 
 
-> **Theorem 1.6 - Riemann rearrangement theorem**
->
-> lf  $\sum_{k=1}^\infty a_k$ is convergent, but not absolutely convergent and $s\in\mathbb{R}$, then there exists a rearrangement $\sigma:\mathbb{N}\to\mathbb{N},s.t.\sum_{k=1}^\infty a_{\sigma(k)}=s$.
+
 
 
 
@@ -989,13 +993,12 @@ $$
 > For $n\in \mathbb{N}$, let $E_n\subseteq \mathbb{R}^d$ be **non-empty compact** set and $E_1\supseteq E_2\supseteq E_3\supseteq \dots$, then
 > $$
 > \bigcap_{n=1}^\infty E_n \neq \emptyset.
->
-> $$
-> For $n\in \mathbb{N}$, let $E_n\subseteq \mathbb{R}^d$ be **non-empty close** set and $E_1\supseteq E_2\supseteq E_3\supseteq \dots$ and $\mathrm{diam}\, E_n\to 0$ 
->
-> then there exists $\mathbf{p}\in \mathbb{R}^d$ with:
 >$$
-> \bigcap_{n=1}^\infty E_n =\{\mathbf{p}\}.
+> For $n\in \mathbb{N}$, let $E_n\subseteq \mathbb{R}^d$ be **non-empty close** set and $E_1\supseteq E_2\supseteq E_3\supseteq \dots$ and $\mathrm{diam}\, E_n\to 0$ 
+> 
+>then there exists $\mathbf{p}\in \mathbb{R}^d$ with:
+> $$
+>\bigcap_{n=1}^\infty E_n =\{\mathbf{p}\}.
 > $$
 
 

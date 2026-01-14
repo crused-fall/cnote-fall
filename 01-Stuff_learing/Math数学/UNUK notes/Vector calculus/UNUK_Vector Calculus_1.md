@@ -923,13 +923,8 @@ Formed by
 $$
 y=(\frac{x}{2v})^2-v^2 \quad y=u^2-(\frac{x}{2u})^2
 $$
-![image-20251127095557178](C:\Users\19006\AppData\Roaming\Typora\typora-user-images\image-20251127095557178.png
+![image-20251127095557178](C:\Users\19006\AppData\Roaming\Typora\typora-user-images\image-20251127095557178.png)
 
-```
-
-```
-
-)
 $$
 \mathbf{h}_{1}=\frac{\partial\mathbf{r}}{\partial u}=(2v,2u),\quad\Rightarrow h_{1}=2\sqrt{u^{2}+v^{2}},\quad\mathbf{e}_{1}=\frac{1}{\sqrt{u^{2}+v^{2}}}(v,u),\\\mathbf{h}_{2}=\frac{\partial\mathbf{r}}{\partial v}=(2u,-2v),\quad\Rightarrow h_{2}=2\sqrt{u^{2}+v^{2}},\quad\mathbf{e}_{2}=\frac{1}{\sqrt{u^{2}+v^{2}}}(u,-v).
 $$
