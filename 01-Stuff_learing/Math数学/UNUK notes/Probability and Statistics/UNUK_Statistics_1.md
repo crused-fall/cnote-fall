@@ -450,8 +450,6 @@ f(x;\theta)=
 \end{cases}
 $$
 
-### Likelihood function
-
 Given observations $x_1,\ldots,x_n$, the likelihood is
 $$
 L(\theta)=\prod_{i=1}^n f(x_i;\theta)
@@ -468,7 +466,6 @@ $$
 \hat{\theta}_{\mathrm{MLE}} = X_{(n)}.
 $$
 
-
 # Chapter Ⅳ
 
 ## Regularity conditions
@@ -482,39 +479,200 @@ $$
 
 
 
-The commonly stipulated **regularity conditons** are:
+Let $X_1,\dots,X_n$ be i.i.d. with density (or pmf) $f(x;\theta)$, where
+ $\theta \in \Theta \subset \mathbb{R}$ and the true parameter is $\theta_0$.
 
-1. The likelihood function is continuous in $\theta$.
+Define the log-likelihood
+$$
+\ell(\theta) = \sum_{i=1}^n \log f(X_i;\theta),
+$$
+and the **score function**
+$$
+U(\theta) = \frac{\partial}{\partial \theta}\,\ell(\theta).
+$$
 
-2. The domain of the probability density/mass function of $\mathbf{X}$ (i.e. its support) does not depend on $\theta$.
+------
 
-3. The **score function**, defined as:
-   $$
-   U(\theta;\mathbf X)=\frac{\partial}{\partial\theta}\log \mathcal{L}(\theta;\mathbf X)
-   $$
-   is supposed to satisfy:
-   $$
-   \mathbb{E}\left(U(\theta;\mathbf{X})\right) = 0.
-   $$
+1. **Regularity Conditions (Assumptions)**
 
-4. The **Fisher information (expected information)**, defined as:
-   $$
-   \mathcal I(\theta)=\text{Var}(U(\theta;\mathbf X))=\sum_n\mathcal I_i(\theta;\mathbf X_i)
-   $$
-   is expected to be:
-   $$
-   \mathcal I(\theta)=\mathbb E\left[\left(\frac{\partial}{\partial\theta}\log\mathcal L(\theta;\mathbf X)\right)^2\right]
-   $$
+The following conditions are assumed to hold in a neighbourhood of the true parameter $\theta_0$.
 
-5. As $n\to \infty$,
-   $$
-   \hat{\theta}\sim\mathcal{N}\left(\theta,\frac{1}{\mathcal{I}(\theta)}\right)
-   $$
+ **(R1) Smoothness**
 
-6. It is satisfied around the **true parameter** $\theta_0$
-   $$
-   \mathbb E\!\left[-\frac{\partial^2 \ell(\theta_0)}{\partial\theta^2}\right] = I(\theta_0).
-   $$
+The log-likelihood $\ell(\theta)$ is twice continuously differentiable with respect to $\theta$.
+
+------
+
+ **(R2) Parameter-independent support**
+
+The support of $f(x;\theta)$ does not depend on $\theta$.
+
+This condition allows differentiation under the integral sign.
+
+------
+
+ **(R3) Interchange of differentiation and integration**
+
+For derivatives up to second order,
+$$
+\frac{\partial}{\partial \theta} \int f(x;\theta)\,dx
+=
+\int \frac{\partial}{\partial \theta} f(x;\theta)\,dx,
+$$
+and similarly for second derivatives.
+
+This is typically justified using the dominated convergence theorem.
+
+------
+
+ **(R4) Finite and non-degenerate Fisher information**
+$$
+0 < \mathcal I(\theta_0) < \infty.
+$$
+
+------
+
+ **(R5) Identifiability**
+$$
+f(x;\theta_1)=f(x;\theta_2)\ \text{a.e.} \quad \Rightarrow \quad \theta_1=\theta_2.
+$$
+
+------
+
+2. **Fisher Information**
+
+The **Fisher information** for one observation is defined as
+$$
+\mathcal I(\theta)
+=
+\mathbb E_\theta\!\left[ \left( \frac{\partial}{\partial \theta}\log f(X;\theta) \right)^2 \right].
+$$
+For $n$ i.i.d. observations,
+$$
+\mathcal I_n(\theta) = n\,\mathcal I(\theta).
+$$
+
+------
+
+3. **Derived Identities (Consequences of Regularity)**
+
+These results are **not assumptions**; they follow from (R1)–(R3).
+
+------
+
+ **Proposition 1: Mean of the score**
+$$
+\mathbb E_\theta[U(\theta)] = 0.
+$$
+Derivation
+$$
+\mathbb E_\theta[U(\theta)]
+=
+\int \frac{\partial}{\partial\theta} \log f(x;\theta)\, f(x;\theta)\,dx
+=
+\int \frac{\partial}{\partial\theta} f(x;\theta)\,dx
+=
+\frac{\partial}{\partial\theta}\int f(x;\theta)\,dx
+=
+0.
+$$
+
+------
+
+ **Proposition 2: Variance form of Fisher information**
+$$
+\mathcal I(\theta) = \operatorname{Var}_\theta(U(\theta)).
+$$
+This follows immediately from Proposition 1.
+
+------
+
+ **Proposition 3: Information identity**
+$$
+\mathcal I(\theta)
+=
+-\,\mathbb E_\theta\!\left[\frac{\partial^2}{\partial \theta^2}\log f(X;\theta)\right].
+$$
+Sketch of derivation
+$$
+\frac{\partial^2}{\partial\theta^2}\log f
+=
+\frac{f''}{f} - \left(\frac{f'}{f}\right)^2.
+$$
+Taking expectations and using
+ $\int f''(x;\theta)\,dx = 0$,
+ we obtain the identity.
+
+------
+
+4. **Maximum Likelihood Estimation**
+
+Let $\hat\theta_n$ denote the MLE, defined by
+$$
+U(\hat\theta_n)=0.
+$$
+
+------
+
+ **Theorem 1: Consistency**
+
+Under (R1)–(R5),
+$$
+\hat\theta_n \xrightarrow{P} \theta_0.
+$$
+
+------
+
+ **Theorem 2: Asymptotic normality of the MLE**
+
+Under (R1)–(R5),
+$$
+\sqrt{n}\,(\hat\theta_n-\theta_0)
+\xrightarrow{d}
+\mathcal N\!\left(0,\ \mathcal I(\theta_0)^{-1}\right).
+$$
+
+------
+
+ **Sketch of derivation**
+
+A Taylor expansion of the score around $\theta_0$:
+$$
+0
+=
+U(\hat\theta_n)
+=
+U(\theta_0)
++
+(\hat\theta_n-\theta_0)\,\ell''(\theta_0)
++
+o_p(\hat\theta_n-\theta_0).
+$$
+Rearranging and using:
+
+- CLT for $U(\theta_0)$
+- Law of large numbers for $\ell''(\theta_0)$
+- Information identity
+
+yields the result.
+
+---
+
+ **Theorem 3**
+
+By Cramér–Rao lower bound：
+$$
+\operatorname{Var}(\hat\theta)
+\ge
+\frac{1}{n\mathcal I(\theta_0)}.
+$$
+and
+$$
+\operatorname{Var}(\hat\theta_n)
+\sim
+\frac{1}{n\mathcal I(\theta_0)}.
+$$
+Therefore, the MLE attains the CRLB in the asymptotic sense and is an **asymptotically efficient estimator**.
 
 
 
@@ -535,7 +693,7 @@ $$
 \text{Var}(\hat{\theta})\rightarrow\frac{1}{\mathcal{I}(\theta)}.
 $$
 
-
+In words, the variance of the maximum likelihood estimators tends to the Cramér-Rao lower bound and we say that the maximum likelihood estimator is **asymptotically efficient**.
 
 
 
@@ -675,7 +833,7 @@ Suppose that we have a simple null hypothesis and a composite alternative hypoth
 $$
 \text{H}_{0}\colon \theta=\theta_{0} \text{ }\text{ versus }\text{ } \text{H}_{1}\colon \theta\neq\theta_{0}\text{ }\text{ (i.e. $\theta\in\Theta, \theta\neq\theta_{0}$)}.
 $$
-If $\mathcal{L}(\theta;\mathbf{X})$ denotes the likelihood functio then the test statistic for the **generalised likelihood ratio test** is 
+If $\mathcal{L}(\theta;\mathbf{X})$ denotes the likelihood function then the test statistic for the **generalised likelihood ratio test** is 
 $$
 2\log\left[\frac{\sup_{\theta\in\Theta}\mathcal{L}(\theta;\mathbf{X})}{\mathcal{L}(\theta_{0};\mathbf{X})}\right]=2\left[\ell(\hat{\theta};\mathbf{X})-\ell(\theta_{0};\mathbf{X})\right]
 $$
@@ -730,9 +888,9 @@ $$
 $$
 note that
 
-- under $\text{H}_{0}$ there are $(J-1)+(K-1)$ free parameters. under 
+- under $\text{H}_{0}$ there are $(J-1)+(K-1)$ free parameters. 
 
-- $\text{H}_{1}$ there are $JK-1$ free parameters because
+- under $\text{H}_{1}$ there are $JK-1$ free parameters because
   $$
   \sum_{j=1}^{J}\sum_{k=1}^{K}p_{jk}=1.
   $$
@@ -990,7 +1148,7 @@ a sample of independent and identically distributed random variables $X_{1},\ldo
 
 we wish to test whether or not these random variables have the same distribution as $X$, where $X$ has cumulative distribution function $F_{0}(x)$. 
 
-11
+
 
  the hypotheses are
 $$

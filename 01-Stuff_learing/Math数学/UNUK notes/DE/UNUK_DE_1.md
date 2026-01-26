@@ -336,8 +336,8 @@ date: 2025-11-16
 >
 >
 > $$
- \begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
-$$
+\begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
+> $$
 > where:
 >
 > - $(A_{1},B_{1})\neq(0,0)$
@@ -435,7 +435,6 @@ $$
 $$
 y(x)=\frac{C}{r(x)}+\frac{1}{r(x)}+\int q(x)r(x)dx
 $$
-
 ##  Solution of constant-coefficient homogeneous ODEs
 $$
 a\frac{d^2y}{dx^2}+b\frac{dy}{dx}+cy=0
@@ -458,7 +457,7 @@ $$
 $$
    y_h(x)=\exp\left(-\frac{bx}{2a}\right)\cdot\left[C\cos\left(\frac{\sqrt{-\Delta}x}{2a}\right)+D\sin\left(\frac{\sqrt{-\Delta}x}{2a}\right)\right]
 $$
-   
+
 
 
 
@@ -472,11 +471,15 @@ Suppose: $u(w)=y(w(x))$, then
 
 1. $$
    \frac{\mathrm{d}u}{\mathrm{d}x}=\frac{\mathrm{d}u}{\mathrm{d}w}\frac{\mathrm{d}w}{\mathrm{d}x}=w^{\prime}(x)\dot{u}
-$$
+   $$
+
+   
 
 2. $$
    \frac{\mathrm{d}^2u}{\mathrm{d}x^2}=\frac{\mathrm{d}}{\mathrm{d}x}[w'(x)\dot{u}]=w''(x)\dot{u}+w'(x)\frac{\mathrm{d}}{\mathrm{d}x}[\dot{u}]=w''(x)\dot{u}+[w'(x)]^2\ddot{u}
    $$
+
+   
 
 the ODE is transformed into:
 $$
@@ -1409,7 +1412,7 @@ Substitute into the equation and use orthogonality to solve for coefficients $a_
 >
 > ------
 >
-> ### 3. Example / 示例
+> ### 3. Example
 >
 > Poisson equation:
 > $$
@@ -1790,7 +1793,7 @@ $$
 >
 > $$
  \begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\left[p(x)\frac{\mathrm{d}y}{\mathrm{d}x}\right]+q(x)y=-\lambda w(x)y(x),\quad a<x<b,\\&A_{1}y(a)+B_{1}y^{\prime}(a)=0,\\&A_{2}y(b)+B_{2}y^{\prime}(b)=0\end{aligned}
-$$
+> $$
 > where:
 >
 > - $(A_{1},B_{1})\neq(0,0)$
@@ -1863,11 +1866,11 @@ $$
 
    For periodic functions $f(t+T)=f(t)$
 $$
-   \mathcal{L}\{f(t)\}=\sum_{n=0}^{\infty}\int_0^Tf(u)e^{-su}du
+\mathcal{L}\left\{f(t)\right\}\:=\:\frac{1}{1-e^{-sT}}\int_{0}^{T}f(t)e^{-st}\mathrm{d}t
 $$
 6. **Convolution**:
 $$
-   \mathcal{L}\{f*g\}=F(s)G(s)
+\mathcal{L}\{f*g\}=F(s)G(s)
 $$
 7. **Frequency Shifting**:
 $$
@@ -1877,7 +1880,6 @@ $$
 $$
    \mathcal{L}\{H(t-t_0)f(t-t_0)\}=e^{-at_0}F(s)
 $$
-   
 
 
 
@@ -1939,11 +1941,56 @@ $$
 
 
 
+## Application
+
+### IVP
+
+**Example**
+$$
+y^{\prime\prime}(t)+2y^{\prime}(t)+y(t)=H(t-1),\quad y(0)=0,\quad y^{\prime}(0)=1.
+$$
+Apply Laplace transform
+$$
+\underbrace{s^2Y(s)-s\cdot0-1}_\text{Property (2)}+2[\underbrace{sY(s)-0]}_{\text{Property (2)}}+Y(s)=\underbrace{\frac{e^{-s}}s}_{\text{Shifting II}}.
+$$
+Thus
+$$
+Y(s)\cdot[s^2+2s+1]=\frac{e^{-s}}{s}+1\quad\implies Y(s)=\frac{1}{(s+1)^2}+\frac{e^{-s}}{s(s+1)^2}.
+$$
+Apply inverse transform
+$$
+y(t)=\mathscr{L}^{-1}\{Y(s)\}=te^{-t}-H(t-1)\cdot[1-e^{1-t}-(1-t)e^{1-t}],
+$$
+
+
+### Integral equation
+
+**Example**
+$$
+y(t)=1+\frac32\int_0^ty(\tau)\sin(2[t-\tau])\mathrm{d}\tau.
+$$
+Apply Laplace transform
+$$
+Y(s)=\frac{1}{s}+\frac{3}{2}\mathcal{L}\left\{y(t)*\sin(2t)\right\}=\frac{1}{s}+\frac{3}{2}\mathcal{Z}\left\{y(t)\right\}.\mathcal{L}\left\{\sin(2t)\right\}=\frac{1}{s}+\frac{3}{2}\cdot Y(s)\cdot\frac{2}{s^{2}+4}.
+$$
+Thus
+$$
+Y(s)\left[1-\frac{3}{s^2+4}\right]=Y(s)\left[\frac{s^2+1}{s^2+4}\right]=\frac{1}{s}\implies Y(s)=\frac{s^2+4}{s(s^2+1)}=\frac{A}{s}+\frac{Bs+C}{s^2+1}.
+$$
+
+$$
+y(t)=\mathscr{L}^{-1}\{Y(s)\}=\mathscr{L}^{-1}\left\{\frac{4}{s}\right\}-\mathscr{L}^{-1}\left\{\frac{3s}{s^{2}+1}\right\}=4-3\cos(t).
+$$
+
+
+
 
 
 ## Chapter Ⅷ
 
-## Properties of  the Fourier transform
+## Propert
+
+ies of  the Fourier transform
 
 1. **Relation to Fourier series**
 
@@ -1959,7 +2006,7 @@ $$
 $$
    |f(x)|\leq M\quad\forall x\in\mathbb{R}\text{ and }\lim_{|x|\to\infty}f(x)=0\implies\hat{f}(k)\:\mathrm{exists}
 $$
-   
+
 3. **Linearity**
 $$
    \mathscr{F}\left\{\alpha f(x)+\beta g(x)\right\}=\alpha\mathscr{F}\left\{f(x)\right\}+\beta\mathscr{F}\left\{g(x)\right\}
@@ -1983,7 +2030,7 @@ $$
    - $f(x)$ is odd:
 $$
      \mathcal{F}\{f(x)\}=-2i\int_0^\infty f(x)\sin(kx)dx
-     $$
+$$
 
 7. **Duality**
    $$
@@ -2103,7 +2150,7 @@ where:
 
 ## Application
 
-### The infinite wave function
+### The infinite wave function (D’Alembert’s formula)
 
 Consider IBVP:
 $$

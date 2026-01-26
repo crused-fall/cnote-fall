@@ -1,5 +1,5 @@
 ---
-title: Notes on UNUK Real Analysis
+Atitle: Notes on UNUK Real Analysis
 tags:
   - math
   - Probability
@@ -209,7 +209,7 @@ date: 2025-11-17
 > $$
 > \rho(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\text{Var}(Y)}}.
 > $$
-> The Pearson correlation provides a measure of the level of **lin**
+> The Pearson correlation provides a measure of the level of **linear dependence**
 
 
 
@@ -320,7 +320,7 @@ date: 2025-11-17
 > **Meaning.**
 >  The probability that $X_n$ deviates from $X$ by more than any fixed $\varepsilon$ goes to zero.
 
-## 
+
 
 > **Definition - Convergence in Distribution**
 >  A sequence $X_n$ converges **in distribution** to $X$, written
@@ -520,7 +520,7 @@ $$
 >
 > For random variables $X$ and 
 > $$
-> \mathbb E[\mathbb E[X∣Y]∣Y,Z]=\mathbb E[\mathbb E[X∣Y,Z]∣Y]=\mathbb E[X∣Y].
+> \mathbb E[\mathbb E[X∣Y,Z]∣Y]=\mathbb E[X∣Y].
 > $$
 > In particular,
 > $$
@@ -564,7 +564,13 @@ $$
 
 
 
-
+> **Theorem 5.2**
+>
+> For any random variables $X$ and $Y$ where $\text{Var}(X)$​ is defined, the following holds: 
+> $$
+> Var(X)=E[Var(X|Y)]+Var[E(X|Y)].
+> $$
+> 
 
 
 
@@ -616,6 +622,8 @@ $$
 $$
 M_{Y}(t)=\prod_{i=1}^{n}M_{X_{i}}(c_{i}t).
 $$
+
+
 **Relation to Probability Generating Functions (PGF)**
 $$
 \phi_{X}(s)=M_{X}(\log s)

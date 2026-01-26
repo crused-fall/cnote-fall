@@ -531,7 +531,7 @@ date: 2025-11-16
 
 > **Theorem 1.1 - Algebra of limits and continuity**
 > $$
-> \begin{aligned}&\texttt{Let }(a_n)_{n\in\mathbb{N}}\text{ and }(b_n)_{n\in\mathbb{N}}\text{ be convergent sequences, and }\lim_{n\to\infty}b_n=b.\\&\lim_{n\to\infty}(a_nb_n)_{n\in\mathbb{N}}\text{ are convergent sequences, and }\lim_{n\to\infty}(a_n+b_n)=a+b\text{ and}\\&\text{Then }(a_n+b_n)_{n\in\mathbb{N}}\text{ and the sequence }(\frac1{a_n})_{n\geq n_n}\text{ is convergent}\\&\lim_{n\to\infty}(a_nb_n)=ab.\\&\text{f }f:(c,d)\to\mathbb{R}\text{ is contiuous at }a\in(c,d)\text{ and }(a_n\neq0\text{ for }n\geq n_0)_n\text{ is a sequence with }c<a_n<d\text{ and }a_n\to a\text{ as}\\&n\to\infty,\text{then }f(a_n)\to f(a)\text{ as }n\to\infty.\end{aligned}
+> \begin{aligned}&\texttt{Let }(a_n)_{n\in\mathbb{N}}\text{ and }(b_n)_{n\in\mathbb{N}}\text{ be convergent sequences, and }\lim_{n\to\infty}b_n=b.\\&\lim_{n\to\infty}(a_nb_n)_{n\in\mathbb{N}}\text{ are convergent sequences, and }\lim_{n\to\infty}(a_n+b_n)=a+b\text{ and}\\&\text{Then }(a_n+b_n)_{n\in\mathbb{N}}\text{ and the sequence }(\frac1{a_n})_{n\geq n_n}\text{ is convergent}\\&\lim_{n\to\infty}(a_nb_n)=ab.\\&\text{If }f:(c,d)\to\mathbb{R}\text{ is contiuous at }a\in(c,d)\text{ and }(a_n\neq0\text{ for }n\geq n_0)_n\text{ is a sequence with }c<a_n<d\text{ and }a_n\to a\text{ as}\\&n\to\infty,\text{then }f(a_n)\to f(a)\text{ as }n\to\infty.\end{aligned}
 > $$
 
 
@@ -545,7 +545,7 @@ date: 2025-11-16
 
 > **Theorem 1.3 - Limit point and subsequence**
 > $$
-> A \text{ is a limit point of }(a_n)_n\iff\exist (a_{n_k})_k, s.t.\lim_{k\rightarrow\infty}a_{n_k}=A 
+> A \text{ is a limit point of }(a_n)_n\iff\exist (a_{n_k})_k, s.t.\lim_{k\rightarrow\infty}a_{n_k}=A
 > $$
 
 
