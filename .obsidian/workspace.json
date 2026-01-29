@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a65599ad18f60d9b",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "5f03aebeecc58bff",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-Stuff_learing/Math数学/Mathematical Analysis/Mathematical Analysis.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Mathematical Analysis"
+              "title": "新标签页"
             }
           }
         ]
@@ -240,8 +226,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "copilot-chat-view"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           },
           {
@@ -257,14 +243,23 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "47b694582641625f",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 668.5,
-    "collapsed": true
+    "width": 773.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -282,13 +277,27 @@
       "random-note:开始漫游笔记": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "obsidian-kanban:创建新看板": false,
+      "quickadd:QuickAdd": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "copilot:Open Copilot Chat": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "5f03aebeecc58bff",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01-Stuff_learing/Math数学/UNUK notes/Real analysis/UNUK_Realanalysis_1.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_6.md",
+    "01-Stuff_learing/Math数学/UNUK notes/Vector calculus & Electromagetic/UNUK_Vector Calculus_1.md",
     "01-Stuff_learing/Math数学/UNUK notes/UNUK notes.md",
+    "05-Ai_Dialogue/Obsidian_Copilot/Roast_my_writing_in_note_and_give_concrete_actionable_feedback@20260126_124808.md",
+    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_1.md",
+    "01-Stuff_learing/Math数学/Elliptic Function/Elliptic Function.md",
+    "01-Stuff_learing/Math数学/Mathematical Analysis/Mathematical Analysis.md",
+    "01-Stuff_learing/Math数学/UNUK notes/Real analysis/UNUK_Realanalysis_1.md",
     "01-Stuff_learing/Math数学/UNUK notes/DE/UNUK_DE_1.md",
     "N_Database.base",
     "00-Inbox收件箱/000-TBC待完成/Mobius Transformation.md",
@@ -302,7 +311,6 @@
     "05-Ai_Dialogue/Obsidian_Copilot/9.11_and_9.8,_which_is_bigger@20251210_164222.md",
     "05-Ai_Dialogue/Obsidian_Copilot",
     "05-Ai_Dialogue",
-    "01-Stuff_learing/Math数学/Mathematical Analysis/Mathematical Analysis.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/The real & complex number systems.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/Real & complex number systems.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/Proof methodology.md",
@@ -312,14 +320,9 @@
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_3.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_4.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_5.md",
-    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_6.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_2.md",
-    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_1.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/M(3)的计算.md",
-    "01-Stuff_learing/Math数学/Elliptic Function/Elliptic_Function_1.md",
-    "01-Stuff_learing/Math数学/Basic Real Analysis/Measure Theory.md",
-    "01-Stuff_learing/Math数学/Basic Real Analysis/Basic Real Analysis.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义",
     "01-Stuff_learing/Math数学/Mathematical Analysis/Untitled Folder",
     "01-Stuff_learing/Literature&Philosophy文哲/Literature文学/one-hundred-years-of-solitude-gabriel-garcia-marquez.pdf",
