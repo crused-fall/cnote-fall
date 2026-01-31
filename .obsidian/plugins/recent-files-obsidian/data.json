@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "N_Database",
+      "path": "N_Database.base"
+    },
+    {
+      "basename": "图论 graph theory",
+      "path": "图论 graph theory.md"
+    },
+    {
+      "basename": "8图论简介",
+      "path": "00-Inbox收件箱/000-TBC待完成/8图论简介.md"
+    },
+    {
+      "basename": "9网络最大流问题",
+      "path": "00-Inbox收件箱/000-TBC待完成/9网络最大流问题.md"
+    },
+    {
       "basename": "Fusible Numbers_6",
       "path": "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_6.md"
     },
@@ -31,10 +47,6 @@
     {
       "basename": "UNUK_DE_1",
       "path": "01-Stuff_learing/Math数学/UNUK notes/DE/UNUK_DE_1.md"
-    },
-    {
-      "basename": "N_Database",
-      "path": "N_Database.base"
     },
     {
       "basename": "Mobius Transformation",

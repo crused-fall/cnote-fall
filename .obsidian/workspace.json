@@ -159,16 +159,6 @@
             }
           },
           {
-            "id": "6482b8c7abd6afd3",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
-            }
-          },
-          {
             "id": "5c93cba53e23a6b4",
             "type": "leaf",
             "state": {
@@ -188,26 +178,6 @@
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
-            }
-          },
-          {
-            "id": "40d51281dbc115e7",
-            "type": "leaf",
-            "state": {
-              "type": "checklist-outline-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "checklist-outline-view"
-            }
-          },
-          {
-            "id": "f055ffbf90df667f",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "todo"
             }
           },
           {
@@ -243,23 +213,14 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
-          {
-            "id": "47b694582641625f",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {},
-              "icon": "checkmark",
-              "title": "Todo List"
-            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 773.5
+    "width": 773.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,19 +238,16 @@
       "random-note:开始漫游笔记": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
-      "omnisearch:Omnisearch": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "obsidian-kanban:创建新看板": false,
-      "quickadd:QuickAdd": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "copilot:Open Copilot Chat": false,
-      "homepage:Open homepage": false
+      "copilot:Open Copilot Chat": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "N_Database.base",
+    "图论 graph theory.md",
+    "00-Inbox收件箱/000-TBC待完成/8图论简介.md",
+    "00-Inbox收件箱/000-TBC待完成/9网络最大流问题.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_6.md",
     "01-Stuff_learing/Math数学/UNUK notes/Vector calculus & Electromagetic/UNUK_Vector Calculus_1.md",
     "01-Stuff_learing/Math数学/UNUK notes/UNUK notes.md",
@@ -299,7 +257,6 @@
     "01-Stuff_learing/Math数学/Mathematical Analysis/Mathematical Analysis.md",
     "01-Stuff_learing/Math数学/UNUK notes/Real analysis/UNUK_Realanalysis_1.md",
     "01-Stuff_learing/Math数学/UNUK notes/DE/UNUK_DE_1.md",
-    "N_Database.base",
     "00-Inbox收件箱/000-TBC待完成/Mobius Transformation.md",
     "01-Stuff_learing/Math数学/UNUK notes/Vector calculus/UNUK_Vector Calculus_1.md",
     "03-GoodNotes/UNUK revision/Vector calculus review.pdf",
@@ -319,10 +276,6 @@
     "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义/2.2Sequences.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_3.md",
     "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_4.md",
-    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_5.md",
-    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers_2.md",
-    "01-Stuff_learing/Math数学/Fusible Numbers/Fusible Numbers.md",
-    "01-Stuff_learing/Math数学/Fusible Numbers/M(3)的计算.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义",
     "01-Stuff_learing/Math数学/Mathematical Analysis/Untitled Folder",
     "01-Stuff_learing/Literature&Philosophy文哲/Literature文学/one-hundred-years-of-solitude-gabriel-garcia-marquez.pdf",
