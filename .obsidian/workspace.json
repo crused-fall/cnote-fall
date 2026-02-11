@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Inbox代办/技术学习.md",
+                "file": "00-Inbox代办/内容学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "技术学习"
+              "title": "内容学习"
             }
           }
         ]
@@ -217,9 +217,9 @@
   },
   "active": "8ab72d21297236e4",
   "lastOpenFiles": [
-    "00-Inbox代办/内容学习.md",
     "00-Inbox代办/技术学习.md",
     "00-Inbox代办/资料目录/Untitled.md",
+    "00-Inbox代办/内容学习.md",
     "00-Inbox代办/资料目录",
     "00-Inbox代办",
     "00-Daily_note/00-Daily_note.md",
