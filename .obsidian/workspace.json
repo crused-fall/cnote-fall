@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-Inbox收件箱/001-Ai_Dialogue/ChatGPT/TechLearning/2025_10_17_00_00_00 Tmux&Alacritty&Neovim 教程.md",
+                "file": "00-Inbox收件箱/001-Ai_Dialogue/Gemini/未命名.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025_10_17_00_00_00 Tmux&Alacritty&Neovim 教程"
+              "title": "未命名"
             }
           }
         ]
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:moc",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -58,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -163,13 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "N_Database.base",
+                "file": "00-Inbox收件箱/001-Ai_Dialogue/Gemini/未命名.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "N_Database 的大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -229,7 +229,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -258,6 +258,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "00-Inbox收件箱/001-Ai_Dialogue/Gemini/Gemini_Math/2026_02_08_04_09_31 分数阶导数.md",
+    "00-Inbox收件箱/001-Ai_Dialogue/Gemini/未命名.md",
+    "00-Inbox收件箱/001-Ai_Dialogue/Gemini/Gemini_Physics",
+    "00-Inbox收件箱/001-Ai_Dialogue/Gemini/Gemini_Math/2026_02_08_03_40_10 审讯囚犯确定魔鬼人数.md",
+    "00-Inbox收件箱/001-Ai_Dialogue/ChatGPT/TechLearning/2025_10_17_00_00_00 Tmux&Alacritty&Neovim 教程.md",
+    "00-Inbox收件箱/001-Ai_Dialogue/Gemini/Gemini_Math",
     "00-Inbox收件箱/000-TBC待完成/2026_01_31_23_22_55 虚拟机折腾以及相关总结.md",
     "00-Inbox收件箱/000-TBC待完成/2026_01_31_23_22_55 虚拟机折腾总结.md",
     "00-Inbox收件箱/000-TBC待完成/虚拟机折腾总结.md",
@@ -285,15 +291,9 @@
     "03-GoodNotes/UNUK revision/DE review.pdf",
     "03-GoodNotes/UNUK revision",
     "01-Stuff_learing/Math数学/UNUK notes/Electromagnetic/UNUK_Electromagnetism_1.md",
-    "05-Ai_Dialogue/Obsidian_Copilot/9.11_and_9.8,_which_is_bigger@20251217_001909.md",
-    "05-Ai_Dialogue/Obsidian_Copilot/9.11_and_9.8,_which_is_bigger@20251210_164222.md",
     "05-Ai_Dialogue/Obsidian_Copilot",
     "05-Ai_Dialogue",
-    "01-Stuff_learing/Math数学/Mathematical Analysis/The real & complex number systems.md",
-    "01-Stuff_learing/Math数学/Mathematical Analysis/Real & complex number systems.md",
     "01-Stuff_learing/Math数学/Mathematical Analysis/数学分析习题课讲义",
-    "01-Stuff_learing/Math数学/Mathematical Analysis/Untitled Folder",
-    "01-Stuff_learing/Literature&Philosophy文哲/Literature文学/one-hundred-years-of-solitude-gabriel-garcia-marquez.pdf",
     "00-PC notes/Math数学/UNUK notes/UNUK notes.canvas",
     "01-GoodNotes/45a4125358e3409c9b9a2230daa03943_00000.png",
     "Untitled.canvas",
