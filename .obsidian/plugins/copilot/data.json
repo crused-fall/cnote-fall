@@ -30,7 +30,7 @@
   "openAIProxyBaseUrl": "",
   "openAIEmbeddingProxyBaseUrl": "",
   "stream": true,
-  "defaultSaveFolder": "05-Ai_Dialogue/Obsidian_Copilot",
+  "defaultSaveFolder": "00-Inbox收件箱\\001-Local_AI",
   "defaultConversationTag": "copilot-conversation",
   "autosaveChat": true,
   "generateAIChatTitleOnSave": true,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "name": "google/gemini-2.5-flash-lite",
+      "name": "google/gemini-2.5-flash",
       "provider": "openrouterai",
       "enabled": true,
       "isBuiltIn": true,
@@ -73,7 +73,27 @@
       ]
     },
     {
-      "name": "google/gemini-2.5-flash",
+      "name": "gpt-5.2",
+      "provider": "openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "core": true,
+      "capabilities": [
+        "vision"
+      ]
+    },
+    {
+      "name": "gpt-5-mini",
+      "provider": "openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "core": true,
+      "capabilities": [
+        "vision"
+      ]
+    },
+    {
+      "name": "google/gemini-2.5-flash-lite",
       "provider": "openrouterai",
       "enabled": true,
       "isBuiltIn": true,
@@ -96,16 +116,6 @@
     },
     {
       "name": "gpt-5",
-      "provider": "openai",
-      "enabled": true,
-      "isBuiltIn": true,
-      "core": true,
-      "capabilities": [
-        "vision"
-      ]
-    },
-    {
-      "name": "gpt-5-mini",
       "provider": "openai",
       "enabled": true,
       "isBuiltIn": true,
@@ -303,6 +313,14 @@
       "dimensions": 512
     },
     {
+      "name": "openai/text-embedding-3-small",
+      "provider": "openrouterai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true
+    },
+    {
       "name": "text-embedding-3-small",
       "provider": "openai",
       "enabled": true,
@@ -383,7 +401,7 @@
   "autocompleteAcceptKey": "Tab",
   "allowAdditionalContext": true,
   "enableWordCompletion": false,
-  "lastDismissedVersion": null,
+  "lastDismissedVersion": "3.2.1",
   "passMarkdownImages": true,
   "enableAutonomousAgent": true,
   "enableCustomPromptTemplating": true,
@@ -408,5 +426,13 @@
   "maxRecentConversations": 30,
   "enableSavedMemory": true,
   "quickCommandIncludeNoteContext": true,
-  "autoIncludeTextSelection": false
+  "autoIncludeTextSelection": false,
+  "autoAddActiveContentToContext": true,
+  "enableInlineCitations": true,
+  "autoCompactThreshold": 128000,
+  "autoAddSelectionToContext": false,
+  "autoAcceptEdits": false,
+  "chatHistorySortStrategy": "recent",
+  "projectListSortStrategy": "recent",
+  "userSystemPromptsFolder": "copilot/system-prompts"
 }
